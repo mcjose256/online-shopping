@@ -2,8 +2,8 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 class CustomUser(AbstractUser):
-    # Add any additional fields you want to store for the user
-    #profile_picture = models.ImageField(upload_to='profile_pictures/', null=True, blank=True)
+    
+    
 
     # Define custom related names for the user's groups and permissions
     groups = models.ManyToManyField(
